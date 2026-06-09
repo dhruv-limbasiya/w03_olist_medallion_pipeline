@@ -1,3 +1,55 @@
-# Virtual environment
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
 venv/
+env/
 .venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*.log
+
+# Environment Variables
+.env
+
+# Build Files
+build/
+dist/
+*.egg-info/
+
+# Data Files (optional)
+# Uncomment if datasets are too large
+# data/raw/
+# data/bronze/
+# data/silver/
+# data/gold/
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Testing
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+data/bronze/
+data/silver/
+data/gold/
+logs/

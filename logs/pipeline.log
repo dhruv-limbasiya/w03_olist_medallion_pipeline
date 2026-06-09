@@ -1,0 +1,20 @@
+2026-06-09 18:16:12,325 - INFO - Bronze Pipeline Started
+2026-06-09 18:16:12,467 - INFO - olist_customers_dataset.csv -> Rows: 99441
+2026-06-09 18:16:12,843 - INFO - olist_customers_dataset.csv processed successfully
+2026-06-09 18:16:13,457 - INFO - olist_geolocation_dataset.csv -> Rows: 1000163
+2026-06-09 18:16:18,433 - INFO - olist_geolocation_dataset.csv processed successfully
+2026-06-09 18:16:18,677 - INFO - olist_order_items_dataset.csv -> Rows: 112650
+2026-06-09 18:16:19,270 - INFO - olist_order_items_dataset.csv processed successfully
+2026-06-09 18:16:19,356 - INFO - olist_order_payments_dataset.csv -> Rows: 103886
+2026-06-09 18:16:19,752 - INFO - olist_order_payments_dataset.csv processed successfully
+2026-06-09 18:16:20,070 - INFO - olist_order_reviews_dataset.csv -> Rows: 99224
+2026-06-09 18:16:20,520 - INFO - olist_order_reviews_dataset.csv processed successfully
+2026-06-09 18:16:20,849 - INFO - olist_orders_dataset.csv -> Rows: 99441
+2026-06-09 18:16:21,354 - INFO - olist_orders_dataset.csv processed successfully
+2026-06-09 18:16:21,407 - INFO - olist_products_dataset.csv -> Rows: 32951
+2026-06-09 18:16:21,603 - INFO - olist_products_dataset.csv processed successfully
+2026-06-09 18:16:21,609 - INFO - olist_sellers_dataset.csv -> Rows: 3095
+2026-06-09 18:16:21,621 - INFO - olist_sellers_dataset.csv processed successfully
+2026-06-09 18:16:21,622 - INFO - product_category_name_translation.csv -> Rows: 71
+2026-06-09 18:16:21,625 - INFO - product_category_name_translation.csv processed successfully
+2026-06-09 18:16:21,625 - INFO - Bronze Pipeline Completed
