@@ -1,20 +1,33 @@
-2026-06-09 18:16:12,325 - INFO - Bronze Pipeline Started
-2026-06-09 18:16:12,467 - INFO - olist_customers_dataset.csv -> Rows: 99441
-2026-06-09 18:16:12,843 - INFO - olist_customers_dataset.csv processed successfully
-2026-06-09 18:16:13,457 - INFO - olist_geolocation_dataset.csv -> Rows: 1000163
-2026-06-09 18:16:18,433 - INFO - olist_geolocation_dataset.csv processed successfully
-2026-06-09 18:16:18,677 - INFO - olist_order_items_dataset.csv -> Rows: 112650
-2026-06-09 18:16:19,270 - INFO - olist_order_items_dataset.csv processed successfully
-2026-06-09 18:16:19,356 - INFO - olist_order_payments_dataset.csv -> Rows: 103886
-2026-06-09 18:16:19,752 - INFO - olist_order_payments_dataset.csv processed successfully
-2026-06-09 18:16:20,070 - INFO - olist_order_reviews_dataset.csv -> Rows: 99224
-2026-06-09 18:16:20,520 - INFO - olist_order_reviews_dataset.csv processed successfully
-2026-06-09 18:16:20,849 - INFO - olist_orders_dataset.csv -> Rows: 99441
-2026-06-09 18:16:21,354 - INFO - olist_orders_dataset.csv processed successfully
-2026-06-09 18:16:21,407 - INFO - olist_products_dataset.csv -> Rows: 32951
-2026-06-09 18:16:21,603 - INFO - olist_products_dataset.csv processed successfully
-2026-06-09 18:16:21,609 - INFO - olist_sellers_dataset.csv -> Rows: 3095
-2026-06-09 18:16:21,621 - INFO - olist_sellers_dataset.csv processed successfully
-2026-06-09 18:16:21,622 - INFO - product_category_name_translation.csv -> Rows: 71
-2026-06-09 18:16:21,625 - INFO - product_category_name_translation.csv processed successfully
-2026-06-09 18:16:21,625 - INFO - Bronze Pipeline Completed
+2026-06-10 19:59:46,286 - INFO - Pipeline Started
+2026-06-10 19:59:46,486 - INFO - customers loaded - Rows: 99441
+2026-06-10 19:59:46,858 - INFO - customers bronze created
+2026-06-10 19:59:46,874 - INFO - customers validation passed
+2026-06-10 19:59:47,247 - INFO - customers silver created
+2026-06-10 19:59:47,875 - INFO - geolocation loaded - Rows: 1000163
+2026-06-10 19:59:52,333 - INFO - geolocation bronze created
+2026-06-10 19:59:57,113 - INFO - geolocation silver created
+2026-06-10 19:59:57,385 - INFO - order_items loaded - Rows: 112650
+2026-06-10 19:59:57,998 - INFO - order_items bronze created
+2026-06-10 19:59:58,667 - INFO - order_items silver created
+2026-06-10 19:59:58,792 - INFO - payments loaded - Rows: 103886
+2026-06-10 19:59:59,260 - INFO - payments bronze created
+2026-06-10 19:59:59,656 - INFO - payments silver created
+2026-06-10 20:00:00,148 - INFO - reviews loaded - Rows: 99224
+2026-06-10 20:00:00,640 - INFO - reviews bronze created
+2026-06-10 20:00:01,144 - INFO - reviews silver created
+2026-06-10 20:00:01,595 - INFO - orders loaded - Rows: 99441
+2026-06-10 20:00:02,199 - INFO - orders bronze created
+2026-06-10 20:00:02,224 - INFO - orders validation passed
+2026-06-10 20:00:03,204 - INFO - orders silver created
+2026-06-10 20:00:03,307 - INFO - products loaded - Rows: 32951
+2026-06-10 20:00:03,507 - INFO - products bronze created
+2026-06-10 20:00:03,509 - INFO - products validation passed
+2026-06-10 20:00:03,700 - INFO - products silver created
+2026-06-10 20:00:03,723 - INFO - sellers loaded - Rows: 3095
+2026-06-10 20:00:03,739 - INFO - sellers bronze created
+2026-06-10 20:00:03,740 - INFO - sellers validation passed
+2026-06-10 20:00:03,752 - INFO - sellers silver created
+2026-06-10 20:00:03,772 - INFO - category_translation loaded - Rows: 71
+2026-06-10 20:00:03,774 - INFO - category_translation bronze created
+2026-06-10 20:00:03,777 - INFO - category_translation silver created
+2026-06-10 20:00:03,777 - INFO - Pipeline Completed
