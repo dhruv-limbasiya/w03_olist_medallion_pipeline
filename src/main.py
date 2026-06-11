@@ -7,6 +7,13 @@ from validations import (
     validate_products,
     validate_sellers
 )
+from gold import (
+    create_customer_revenue,
+    create_product_revenue,
+    create_state_revenue,
+    create_order_summary,
+    create_monthly_revenue
+)
 
 import logging as log
 
@@ -83,14 +90,13 @@ files = [
 ]
 
 log.info("Pipeline Started")
-
-for raw_path, dataset_name, bronze_path, silver_path in files:
-    validators = {
+validators = {
     "orders": validate_orders,
     "customers": validate_customers,
     "products": validate_products,
     "sellers": validate_sellers
     }
+for raw_path, dataset_name, bronze_path, silver_path in files:
     try:
 
         df = extract(raw_path)
@@ -137,4 +143,31 @@ for raw_path, dataset_name, bronze_path, silver_path in files:
             f"{dataset_name} failed: {e}"
         )
 
+
+orders_df = extract("./data/silver/silver_orders.csv")
+order_items_df = extract("./data/silver/silver_order_items.csv")
+customer_df = extract("./data/silver/silver_customers.csv")
+product_df = extract("./data/silver/silver_products.csv")
+    
+    
+customer_revenue = create_customer_revenue(orders_df, order_items_df)
+customer_revenue.to_csv("./data/gold/customer_revenue.csv", index=False)
+log.info("Customer revenue created")
+
+product_revenue = create_product_revenue(product_df, order_items_df)
+product_revenue.to_csv("./data/gold/product_revenue.csv", index=False)  
+log.info("Product revenue created")
+
+state_revenue = create_state_revenue(customer_df, orders_df, order_items_df)
+state_revenue.to_csv("./data/gold/state_revenue.csv", index=False)
+log.info("State revenue created")
+
+order_summary = create_order_summary(orders_df, order_items_df)
+order_summary.to_csv("./data/gold/order_summary.csv", index=False)
+log.info("Order summary created")
+
+monthly_revenue = create_monthly_revenue(orders_df, order_items_df)
+monthly_revenue.to_csv("./data/gold/monthly_revenue.csv", index=False)  
+log.info("Monthly revenue created")
+  
 log.info("Pipeline Completed")
